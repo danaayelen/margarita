@@ -1,0 +1,172 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Nunito Sans", sans-serif;
+}
+/* Estilo para el header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(80, 180, 58, 0.692) 0%, rgba(255, 255, 253, 0.836) 50%, rgba(240, 134, 134, 0.808) 100%);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    z-index: 1;
+}
+/* Estilo para el nav */
+nav {
+    display: flex;
+    align-items: center; /* Alineación vertical */
+    justify-content: center; /* Espacio entre los elementos */
+    padding: 10px 20px;
+}
+/* Estilo para el título */
+nav h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: auto;
+    color: #333;
+}
+/* Estilo para los links */
+nav a {
+    text-decoration:dotted; 
+    color: #000000;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+/* Cambio de color en hover */
+nav a:hover {
+    color: #610404;
+}
+/*termina estilos para header */
+
+main{
+    margin-top: 75px;
+   
+}
+/*bienvenida */
+.bienvenido {
+    display: flex;
+    flex-direction: column; /* Para que los elementos estén en columna inicialmente */
+    align-items: center; /* Centra horizontalmente el contenido */
+    padding: 20px;
+    text-align: justify;
+}
+
+.logo {
+    max-width: 100%; /* La imagen se ajusta al tamaño del contenedor */
+    width: 300px; /* Tamaño máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 50%; /* Hace la imagen circular */
+    margin-bottom: 20px; /* Añade espacio entre la imagen y el texto */
+}
+.bienvenido-text{
+    background-color: #f0d49963;
+    padding: 10px;
+    border-radius: 20px;
+}
+.texto{
+    max-width: 800px; /* Limita el ancho del texto para que sea legible */
+    width: 100%; /* Se ajusta al tamaño del contenedor */
+}
+/**********************/
+.elemento-b{
+    width: 300px;
+    height: 250px;
+    border-radius: 70px;
+}
+.element-left1{
+    padding: 10px;
+    background-color: #cce9a691;
+    margin: 10px;
+    display: flex; /* Activa el modelo de caja flexible */
+    align-items: center; /* Alinea verticalmente los elementos */
+    gap: 20px; /* Espaciado entre la imagen y el texto */
+}
+.element-left1 img {
+    width: 150px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+}
+.text-content {
+    display: flex; /* Flexbox para organizar el h3 y el p */
+    flex-direction: column; /* Coloca los elementos en columna (uno encima del otro) */
+    justify-content: center; /* Centra verticalmente el texto con respecto a la imagen */
+    flex: 1; /* Permite que el contenedor de texto ocupe el espacio restante */
+}
+
+.text-content h3 {
+    margin: 0 0 10px 0; /* Espaciado inferior entre el h3 y el p */
+    font-size: 20px; /* Ajusta el tamaño de la fuente */
+}
+
+.text-content p {
+    margin: 0; /* Elimina márgenes por defecto */
+    text-align: justify; /* Justifica el texto */
+    font-size: 16px; /* Ajusta el tamaño de la fuente */
+}
+/******************************************************************/
+.element-right1{
+    padding: 10px;
+    background-color: #fcc04983;
+    margin: 10px;
+    display: flex; /* Activa el modelo de caja flexible */
+    align-items: center; /* Alinea verticalmente los elementos */
+    gap: 20px; /* Espaciado entre la imagen y el texto */
+    flex-direction: row-reverse ;
+}
+.element-right1 img {
+    width: 150px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+}
+.text-content-right {
+    display: flex; /* Flexbox para organizar el h3 y el p */
+    flex-direction: column; /* Coloca los elementos en columna (uno encima del otro) */
+    justify-content: center; /* Centra verticalmente el texto con respecto a la imagen */
+    flex: 1; /* Permite que el contenedor de texto ocupe el espacio restante */
+}
+
+.text-content-right  h3 {
+    margin: 0 0 10px 0; /* Espaciado inferior entre el h3 y el p */
+    font-size: 20px; /* Ajusta el tamaño de la fuente */
+}
+
+.text-content-right  p {
+    margin: 0; /* Elimina márgenes por defecto */
+    text-align: justify; /* Justifica el texto */
+    font-size: 16px; /* Ajusta el tamaño de la fuente */
+}
+
+/********************************************************************/
+/*footer*/
+footer {
+    position: relative;
+    font-size: 20px;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(81,180,58,0.3642691415313225) 0%, rgba(255,255,253,0.87) 50%, rgba(240, 134, 134, 0.348) 100%);
+    border-top: 6px solid #dee2e6;
+    z-index: 10;
+    padding-bottom: 15px;
+
+}
+.social-icons {
+    position: absolute;
+    bottom: 10px; /* Ajusta la posición vertical desde abajo */
+    right: 20px; /* Ajusta la posición horizontal desde la derecha */
+    size: 25px;
+}
+.social-icons a {
+    text-decoration: none;
+    color: #6c757d; /* Color por defecto de los íconos */
+    transition: color 0.3s;
+   
+}
+.social-icons a:hover {
+    color: #000; /* Cambia a negro al pasar el ratón */
+}
